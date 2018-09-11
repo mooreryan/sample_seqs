@@ -106,9 +106,12 @@ main(int argc, char* argv[])
           "\n"
           "  You must pass in either both -1 and -2, OR -s OR -1, -2, and -s.\n"
           "\n"
-          "  I will keep the paired reads together if you give me sequences using -1 and -2.\n"
-          "  HOWEVER, I will not check to ensure they are properly paired.  \n"
-          "  I will ASSUME that they are in fact properly paired.\n";
+          "  I will keep the paired reads together if you give me sequences using -1 and -2.  "
+          "  HOWEVER, I will not check to ensure they are properly paired.  "
+          "  In other words, I will ASSUME that they are in fact properly paired.\n"
+          "\n"
+          "  I probably won't give you an exact N percent sample.  "
+          "  To be speedy, I give every read or read pair an N percent chance of being sampled.  There's a slight difference there.\n";
 
 
 
