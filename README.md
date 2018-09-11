@@ -6,15 +6,15 @@ Currently, I'm on version 0.1.0.
 
 ## Install
 
-Basic install...
+Basic install (with 2 cpus)...
 
 ```
-git clone https://github.com/mooreryan/distance.git
-cd sampling
+git clone https://github.com/mooreryan/sample_seqs.git
+cd sample_seqs
 mkdir build
 cd build
 cmake ..
-make
+make -j2
 make install
 ```
 
@@ -26,16 +26,10 @@ If you're on a Mac and want to use `gcc`, you could replace the cmake line above
 CC=/usr/local/bin/gcc-7 cmake ..
 ```
 
-## Tests
+## Usage
 
-If you want to run the tests, you need to have `ceedling` installed.
+Check the help banner like this
 
-```bash
-gem install ceedling
 ```
-
-Then run the tests.
-
-```bash
-ceedling
+$ sample_seqs -h
 ```

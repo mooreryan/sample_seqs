@@ -6,15 +6,15 @@ Currently, I'm on version @SMPL_VERSION_STRING@.
 
 ## Install
 
-Basic install...
+Basic install (with 2 cpus)...
 
 ```
-git clone https://github.com/mooreryan/distance.git
-cd sampling
+git clone https://github.com/mooreryan/sample_seqs.git
+cd sample_seqs
 mkdir build
 cd build
 cmake ..
-make
+make -j2
 make install
 ```
 
