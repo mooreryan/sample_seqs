@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.7)
+cmake_minimum_required(VERSION 3.0)
 
 # Add in some lovely flags.  use no-unused-function because of kseq
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -g -Wno-unused-function -O3 -fopt-info-optimized")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -g -Wno-unused-function -O3")
 
 # This is a C project called sampling!
 project("sampling" C)
