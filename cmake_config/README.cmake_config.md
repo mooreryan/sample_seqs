@@ -12,7 +12,15 @@ Currently, I'm on version @SMPL_VERSION_STRING@.
 
 ### Dependencies
 
-If you don't have the `rya` C library, first go [here](TODO) and follow the install instructions.
+If you don't have the `rya` C library, first go [here](https://github.com/mooreryan/rya_c) and follow the install instructions.
+
+If this command fails:
+
+```bash
+ls /usr/local/include/rya.h
+```
+
+then you probably need to install the library.  Please follow [this link](https://github.com/mooreryan/rya_c) and install the library.
 
 ### Install instructions
 
