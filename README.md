@@ -6,7 +6,7 @@ See [below](#usage) for usage info.
 
 ## Version
 
-Currently, I'm on version 0.1.2.
+Currently, I'm on version 0.1.3.
 
 ## Install
 
@@ -22,20 +22,20 @@ Then download the code (use `curl` or `wget` but not both!).
 If you have `curl` run:
 
 ```bash
-\curl -L 'https://github.com/mooreryan/sample_seqs/archive/v0.1.2.tar.gz' > v0.1.2.tar.gz
+\curl -L 'https://github.com/mooreryan/sample_seqs/archive/v0.1.3.tar.gz' > v0.1.3.tar.gz
 ```
 
 If you have `wget`, run
 
 ```bash
-wget 'https://github.com/mooreryan/sample_seqs/archive/v0.1.2.tar.gz'
+wget 'https://github.com/mooreryan/sample_seqs/archive/v0.1.3.tar.gz'
 ```
 
 Unzip the tar file and enter the resulting directory.
 
 ```bash
-tar xzf v0.1.2.tar.gz
-cd sample_seqs-0.1.2
+tar xzf v0.1.3.tar.gz
+cd sample_seqs-0.1.3
 ```
 
 Now we can build and install the library.
@@ -47,6 +47,16 @@ cmake ..
 make
 make install
 ```
+
+### Run tests
+
+There are some tests that you can run if you want to check that everything is working.  Right after the `make install` command, run
+
+```bash
+make test
+```
+
+If it passes you're good to go!
 
 ### Potential problems
 

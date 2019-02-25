@@ -48,6 +48,16 @@ make
 make install
 ```
 
+### Run tests
+
+There are some tests that you can run if you want to check that everything is working.  Right after the `make install` command, run
+
+```bash
+make test
+```
+
+If it passes you're good to go!
+
 ### Potential problems
 
 #### Can't find the `rya` library
