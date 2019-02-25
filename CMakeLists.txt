@@ -44,6 +44,7 @@ include_directories(${VENDOR_PCG_DIR}/extras) # for the entropy.h
 # Configure files
 configure_file("${CONFIG_DIR}/sampling.cmake_config.h" "${HEADER_DIR}/sampling.h")
 configure_file("${CONFIG_DIR}/README.cmake_config.md" "${PROJECT_SOURCE_DIR}/README.md")
+configure_file("${CONFIG_DIR}/test_sample_seqs.cmake_config.sh" "${PROJECT_SOURCE_DIR}/test/test_sample_seqs.sh")
 
 # Here's the program....
 add_executable(sample_seqs ${SOURCE_DIR}/sample_seqs.c ${KSEQ_SOURCES} ${TOMMY_SOURCES} ${PCG_SOURCES} ${VENDOR_PCG_DIR}/extras/entropy.c)
@@ -90,3 +91,9 @@ if (RYA_H_PATH AND RYA_FILE_LIB AND RYA_FILE_H_PATH AND RYA_FORMAT_LIB AND RYA_F
 else ()
     message(FATAL_ERROR "rya library not found")
 endif ()
+
+# Testing!
+enable_testing()
+add_test(NAME test_sample_seqs
+        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+        COMMAND test/test_sample_seqs.sh)

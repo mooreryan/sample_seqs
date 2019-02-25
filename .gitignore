@@ -1,9 +1,12 @@
 .idea
 ARSTOIEN
 cmake-build-*
-test_files/TEST_OUTPUT
+test_files/actual
 project.yml
 vendor/ceedling
 include/sampling.h
 
 *build*
+
+# This should be built on the fly by CMake
+test/test_sample_seqs.sh
