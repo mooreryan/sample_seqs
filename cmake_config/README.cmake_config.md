@@ -10,7 +10,13 @@ Currently, I'm on version @SMPL_VERSION_STRING@.
 
 ## Install
 
-First, make a directory to hold the source code.
+### Dependencies
+
+If you don't have the `rya` C library, first go [here](TODO) and follow the install instructions.
+
+### Install instructions
+
+Make a directory to hold the source code.
 
 ```bash
 mkdir sample_seqs_source
