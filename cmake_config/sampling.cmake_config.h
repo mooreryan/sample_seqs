@@ -12,7 +12,7 @@
 #define SMPL_VERSION_PATCH @SMPL_VERSION_PATCH@
 #define SMPL_VERSION_STRING "@SMPL_VERSION_STRING@"
 
-#define SMPL_COPYRIGHT "2018 Ryan Moore"
+#define SMPL_COPYRIGHT "2018 - 2019 Ryan Moore"
 #define SMPL_CONTACT "moorer@udel.edu"
 #define SMPL_WEBSITE "https://github.com/mooreryan/pasv/sample_seqs"
 #define SMPL_LICENSE "MIT"
