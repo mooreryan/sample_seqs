@@ -5,3 +5,5 @@ test_files/TEST_OUTPUT
 project.yml
 vendor/ceedling
 include/sampling.h
+
+*build*
