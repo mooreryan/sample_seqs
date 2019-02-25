@@ -1,8 +1,12 @@
 # Sampling
 
-Sampling stuff.
+Sample reads randomly....paired, single, or both at the same time!
 
-Currently, I'm on version 0.1.1.
+See [below](#usage) for usage info.
+
+## Version
+
+Currently, I'm on version 0.1.2.
 
 ## Install
 
@@ -18,20 +22,20 @@ Then download the code (use `curl` or `wget` but not both!).
 If you have `curl` run:
 
 ```bash
-\curl -L 'https://github.com/mooreryan/sample_seqs/archive/v0.1.1.tar.gz' > v0.1.1.tar.gz
+\curl -L 'https://github.com/mooreryan/sample_seqs/archive/v0.1.2.tar.gz' > v0.1.2.tar.gz
 ```
 
 If you have `wget`, run
 
 ```bash
-wget 'https://github.com/mooreryan/sample_seqs/archive/v0.1.1.tar.gz'
+wget 'https://github.com/mooreryan/sample_seqs/archive/v0.1.2.tar.gz'
 ```
 
 Unzip the tar file and enter the resulting directory.
 
 ```bash
-tar xzf v0.1.1.tar.gz
-cd sample_seqs-0.1.1
+tar xzf v0.1.2.tar.gz
+cd sample_seqs-0.1.2
 ```
 
 Now we can build and install the library.

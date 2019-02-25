@@ -1,6 +1,10 @@
 # Sampling
 
-Sampling stuff.
+Sample reads randomly....paired, single, or both at the same time!
+
+See [below](#usage) for usage info.
+
+## Version
 
 Currently, I'm on version @SMPL_VERSION_STRING@.
 
