@@ -48,6 +48,10 @@ configure_file("${CONFIG_DIR}/README.cmake_config.md" "${PROJECT_SOURCE_DIR}/REA
 # Here's the program....
 add_executable(sample_seqs ${SOURCE_DIR}/sample_seqs.c ${KSEQ_SOURCES} ${TOMMY_SOURCES} ${PCG_SOURCES} ${VENDOR_PCG_DIR}/extras/entropy.c)
 
+# Install with make install (installs relative to $<INSTALL_PREFIX>)
+install(TARGETS sample_seqs
+        RUNTIME DESTINATION bin)
+
 # Libraries we need....
 
 ## Check and see if OpenMP is available
