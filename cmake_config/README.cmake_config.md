@@ -12,6 +12,18 @@ Currently, I'm on version @SMPL_VERSION_STRING@.
 
 ### Dependencies
 
+#### CMake
+
+I need `cmake` to compile.  Check if you have `cmake` with
+
+```bash
+which cmake
+```
+
+If you don't have CMake installed, please go [here](https://cmake.org/install/) and install it.
+
+#### Rya C library
+
 If you don't have the `rya` C library, first go [here](https://github.com/mooreryan/rya_c) and follow the install instructions.
 
 If this command fails:
