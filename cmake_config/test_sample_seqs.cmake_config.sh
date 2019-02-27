@@ -37,7 +37,7 @@ $cmd
 
 for f in `ls "$actual_outdir"/*.fq`; do
     base=$(basename -- "$f")
-    
+
     diff "$f" "$expected_outdir/$base"
 
     if [ $? -ne 0 ]; then

@@ -6,7 +6,7 @@ See [below](#usage) for usage info.
 
 ## Version
 
-Currently, I'm on version 0.1.3.
+Currently, I'm on version 0.1.4.
 
 ## Install
 
@@ -48,20 +48,20 @@ Then download the code (use `curl` or `wget` but not both!).
 If you have `curl` run:
 
 ```bash
-\curl -L 'https://github.com/mooreryan/sample_seqs/archive/v0.1.3.tar.gz' > v0.1.3.tar.gz
+\curl -L 'https://github.com/mooreryan/sample_seqs/archive/v0.1.4.tar.gz' > v0.1.4.tar.gz
 ```
 
 If you have `wget`, run
 
 ```bash
-wget 'https://github.com/mooreryan/sample_seqs/archive/v0.1.3.tar.gz'
+wget 'https://github.com/mooreryan/sample_seqs/archive/v0.1.4.tar.gz'
 ```
 
 Unzip the tar file and enter the resulting directory.
 
 ```bash
-tar xzf v0.1.3.tar.gz
-cd sample_seqs-0.1.3
+tar xzf v0.1.4.tar.gz
+cd sample_seqs-0.1.4
 ```
 
 Now we can build and install the library.
@@ -84,7 +84,7 @@ make test
 
 If it passes you're good to go!
 
-### Potential problems
+### Potential install problems
 
 #### Can't find the `rya` library
 
@@ -139,6 +139,33 @@ Among other things, you'll see this usage banner.
   usage:
     sample_seqs -p sampling_percent -n num_samples -o outdir -b basename [-r random_seed] [-1 forward_seqs] [-2 reverse_seqs] [-s single/unpaired seqs] [-h help]
 ```
+
+### Potential usage problems
+
+#### Can't find the `rya` shared library
+
+If you installed the `rya` library in a non standard place, the `sample_seqs` program may not be able to find the library.  For example, if you ran `cmake` for the `rya` library like this
+
+```bash
+cmake -DCMAKE_INSTALL_PREFIX=$HOME ..
+```
+
+then the shared object files will be under `$HOME/lib` or `$HOME/lib64` (or something like that depending on your OS).
+
+So you should add the following to your shell config file (e.g., `~/.profile`, `~/.bash_profile`, or whatever you use):
+
+```bash
+# Local shared object libs
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"$HOME"/lib
+```
+or 
+
+```bash
+# Local shared object libs
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"$HOME"/lib64
+```
+
+depending on if the file is in `lib` or `lib64`.
 
 ### Usage notes
 
