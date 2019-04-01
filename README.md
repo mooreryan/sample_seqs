@@ -97,6 +97,22 @@ cmake -DCMAKE_PREFIX_PATH=$HOME/my_cool_libraries ..
 
 Then you can continue on with the `make` and `make install` commands as above.
 
+##### If you installed the `rya` lib in `$HOME`
+
+*Note*:  If you installed the `rya` library into your `$HOME` directory, e.g., by using this `cmake` command
+
+```
+cmake -DCMAKE_INSTALL_PREFIX=$HOME ..
+```
+
+then to properly install `sample_seqs`, you will need to specify the `CMAKE_PREFIX_PATH` option like this
+
+```
+cmake -DCMAKE_INSTALL_PREFIX=$HOME ..
+```
+
+even though that command will place the header and shared object files in subdirectories of your `$HOME` directory.
+
 #### Switching compilers
 
 If you're on a Mac you may need to use an actual `gcc` rather than the default apple compiler.  If you're having issues, try running the `cmake` command like this (as opposed to what is shown above):
