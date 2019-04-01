@@ -88,7 +88,7 @@ If it passes you're good to go!
 
 #### Can't find the `rya` library
 
-* Did you install the `rya` library?  If not go [here](TODO) and follow the install instructions.
+* Did you install the `rya` library?  If not go [here](https://github.com/mooreryan/rya_c) and follow the install instructions.
 * If you installed the `rya` library in a non-standard location, (e.g., `$HOME/my_cool_libraries`), you need to specify that path to `cmake` like so:
 
 ```bash
